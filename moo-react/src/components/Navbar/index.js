@@ -33,7 +33,7 @@ const NavItems = [
         class: "NavItem"
     },
     {
-        name: "CONTACTA",
+        name: "CONTACTAA",
         link: "#",
         class: "NavItem"
     },
