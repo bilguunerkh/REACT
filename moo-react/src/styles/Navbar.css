@@ -1,0 +1,24 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 66px 0; */
+}
+.RightHeseg {
+  display: flex;
+  gap: 20px;
+}
+.RightHeseg a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #424242;
+}
+.LeftHeseg {
+  display: flex;
+  gap: 10px;
+}
+.Logo {
+  width: 150px;
+}

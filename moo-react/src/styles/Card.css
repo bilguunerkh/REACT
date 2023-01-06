@@ -1,0 +1,27 @@
+.Carduud {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 124px;
+}
+.cardo {
+  width: calc(50% - 30px);
+}
+h5 {
+  opacity: 0.5;
+}
+h3 {
+  color: rgb(17, 91, 202);
+  font-size: 25px;
+}
+p {
+  width: 590px;
+  font-size: 15px;
+}
+a {
+  font-size: 18px;
+  color: #d05270;
+}
+img {
+  border-radius: 3px;
+}

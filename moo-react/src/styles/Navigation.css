@@ -1,0 +1,17 @@
+.Navigation {
+  display: flex;
+  gap: 54px;
+  margin-top: 155px;
+}
+.NavItem {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #424242;
+}
+.NavItem:hover {
+  font-weight: bold;
+  color: rgb(5, 104, 253);
+}
