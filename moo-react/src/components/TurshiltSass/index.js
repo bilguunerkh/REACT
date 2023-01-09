@@ -1,21 +1,50 @@
 import React from 'react'
-import { Button } from 'react-bootstrap';
+
+import Btn from '../Body/Btn';
+import { useState } from 'react';
+
+
+
+
+const botton = [
+  {
+    title: "Add",
+    variant: "primary"
+  },
+  {
+    title: "Has",
+    variant: "secondary"
+  },
+]
+
+
 
 
 
 const Sass = () => {
-    return (
-      <>
-      <Button variant="primary">Primary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
-      <Button variant="success">Success</Button>{' '}
-      <Button variant="warning">Warning</Button>{' '}
-      <Button variant="danger">Danger</Button>{' '}
-      <Button variant="info">Info</Button>{' '}
-      <Button variant="light">Light</Button>{' '}
-      <Button variant="dark">Dark</Button>
-      <Button variant="link">Link</Button>
-    </>
-    )
+
+const [count, setCount] = useState(0);
+const handleClick = (title) =>{
+  if(title === "Add"){
+    setCount(count + 1)
+  }else{
+    setCount(count - 1)
+  }
+
 }
+    return (
+      <div>
+      <h1>Counter: {count}</h1>
+      {botton.map((item) => (
+        <Btn
+        a={item.title}
+        b={item.variant}
+        handleClick={handleClick}
+        />
+      ))}
+      </div>
+
+
+    );
+};
 export default Sass;

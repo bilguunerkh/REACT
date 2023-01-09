@@ -1,19 +1,12 @@
+import { Button } from "react-bootstrap";
+import React from "react";
+
 const Btn = (props) => {
-    const handleClick = (name) => {
-      alert("Hello-" + name);
-    };
     return (
-      <button
-        className={props.classNer}
-        href="{item.link}"
-        onClick={() => {
-          handleClick(props.name);
-        }}
-      >
-        <img src={props.icon} alt="icon" />
-        {props.name}
-      </button>
+      <Button variant={props.b} onClick={()=>{
+        props.handleClick(props.a);
+      }}>{props.a}</Button>
     );
   };
   
-  export default Btn;
+export default Btn;
