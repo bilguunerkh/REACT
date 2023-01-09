@@ -1,8 +1,8 @@
 import "../../styles/Navigation.css";
-import "../../styles/Details.css";
+
 import Btn from "./Btn";
 import { useState } from "react";
-import MenuItem from "../MenuItem";
+
 
 
 const naviga = [
@@ -11,8 +11,7 @@ const naviga = [
     {name: "UX Design", category: "UX"},
     {name: "Dev Design", category: ""},
     {name: "Articles", category: ""},
-    {name: "Tutorials", category: ""},
-    {name: "News", category: ""},
+
 ];
 
 const blogs = [
